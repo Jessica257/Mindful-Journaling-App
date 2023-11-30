@@ -1,0 +1,65 @@
+.mood-tracking-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mood-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.current-mood {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.mood-buttons {
+  margin-top: 20px;
+}
+
+.mood-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.mood-button.neutral {
+  background-color: #fbc02d;
+}
+
+.mood-button.sad {
+  background-color: #f44336;
+}
+
+.recorded-moods-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recorded-mood-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-mood-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}

@@ -1,0 +1,27 @@
+.affirmations-container {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.affirmations-title {
+  color: #020087;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.affirmations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.affirmations-item {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #020087;
+}

@@ -1,0 +1,70 @@
+.gratitude-container {
+  background-color: #acc3bd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gratitude-title {
+  color: #020087;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.gratitude-input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gratitude-button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #020087;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gratitude-button:hover {
+  background-color: #01356d;
+}
+
+.delete-button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
+.gratitude-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.gratitude-list-item {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #020087;
+}
+
+.gratitude-list-item:first-child {
+  margin-top: 0;
+}
