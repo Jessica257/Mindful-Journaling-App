@@ -1,0 +1,91 @@
+@keyframes changeBackground {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease;
+}
+
+#sidebar {
+  flex: 1;
+  max-width: 300px;
+  max-height: 100vh;
+  background-color: rgba(173, 216, 230, 0.8);
+  z-index: 1;
+}
+
+.features-section,
+.how-to-use-section {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #808187;
+  text-align: center;
+}
+
+h4 {
+  color: #275159;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: darkcyan;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
