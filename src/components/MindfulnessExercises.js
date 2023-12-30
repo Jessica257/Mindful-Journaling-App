@@ -3,10 +3,14 @@ import MindfulBreathing from "./MindfulBreathing";
 import MindfulAppreciation from "./MindfulAppreciation";
 import MindfulObservation from "./MindfulObservation";
 import "../styles/MindfulnessExercises.css";
+import mindfulness from "../assets/images/mindfulness.jpg";
 
 const MindfulnessExercises = () => {
   return (
-    <div className="mindfulness-container">
+    <div
+      className="mindfulness-container"
+      style={{ backgroundImage: `url(${mindfulness})` }}
+    >
       <h2 className="mindfulness-title">Mindfulness Exercises</h2>
       <p className="mindfulness-description">
         Try a short mindfulness exercise or meditation session.
