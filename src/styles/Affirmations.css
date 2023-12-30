@@ -1,12 +1,13 @@
 .affirmations-container {
-  background-color: #f6f6f6;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .affirmations-title {
-  color: #020087;
+  color: darkcyan;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -18,10 +19,16 @@
 
 .affirmations-item {
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   color: #020087;
+  transition: box-shadow 0.3s;
+}
+
+.affirmations-item:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 1),
+    0 0 90px rgba(255, 255, 255, 1);
 }

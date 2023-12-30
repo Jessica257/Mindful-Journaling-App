@@ -5,7 +5,7 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      For support or inquiries, contact us at{" "}
+      For support or enquiries, contact us at{" "}
       <a href="mailto:email@example.com">mindful@app.com</a>.
     </footer>
   );
