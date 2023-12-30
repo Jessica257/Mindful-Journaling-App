@@ -22,6 +22,11 @@
   margin-bottom: 30px;
   border-radius: 8px;
   background-color: rgba(173, 216, 230, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.mindful-exercise:hover {
+  transform: scale(1.05);
 }
 
 .exercises {

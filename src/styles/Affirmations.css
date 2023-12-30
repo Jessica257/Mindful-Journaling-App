@@ -25,7 +25,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   color: #020087;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.5s;
 }
 
 .affirmations-item:hover {
