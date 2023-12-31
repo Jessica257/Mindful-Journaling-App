@@ -50,6 +50,7 @@ const Home = () => {
             <li>Track your mood for the day.</li>
             <li>Add visual elements to your journal.</li>
             <li>Practice mindful exercises.</li>
+            <li>And more.</li>
           </ol>
 
           <Link to="/gratitude" className="explore-button">
