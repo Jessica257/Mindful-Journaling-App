@@ -1,4 +1,7 @@
-# Mindful Journaling App
+# Mindful Journaling App  
+
+![image](https://github.com/Jessica257/Mindful-Journaling-App/assets/119800334/9eb85d3d-a4fe-4b77-91ca-dda59a3c0acb)
+
 
 ## Project Overview
 
