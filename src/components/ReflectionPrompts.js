@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/ReflectionPrompts.css";
+import reflection from "../assets/images/reflection.jpg";
 
 const ReflectionPrompts = () => {
   const [prompt, setPrompt] = useState("What are you grateful for today?");
@@ -9,9 +10,12 @@ const ReflectionPrompts = () => {
   };
 
   return (
-    <div className="reflection-prompts-container">
-      <h2 className="reflectiom-title">Reflection Prompts</h2>
-      <p className="cureent-prompt">Current Prompt: {prompt}</p>
+    <div
+      className="reflection-prompts-container"
+      style={{ backgroundImage: `url(${reflection})` }}
+    >
+      <h2 className="reflection-title">Reflection Prompts</h2>
+      <p className="current-prompt">Current Prompt: {prompt}</p>
       <div className="prompt-buttons">
         <button
           onClick={() => changePrompt("What brought you joy today?")}

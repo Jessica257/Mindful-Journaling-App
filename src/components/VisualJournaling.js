@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/VisualJournaling.css";
+import visual from "../assets/images/visual.jpg";
 
 const VisualJournaling = () => {
   const [visualEntries, setVisualEntries] = useState([]);
@@ -14,7 +15,10 @@ const VisualJournaling = () => {
   };
 
   return (
-    <div className="visual-journal-container">
+    <div
+      className="visual-journal-container"
+      style={{ backgroundImage: `url(${visual})` }}
+    >
       <h2 className="visual-journal-title">Visual Journaling</h2>
       <input
         type="text"

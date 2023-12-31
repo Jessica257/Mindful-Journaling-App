@@ -4,10 +4,12 @@ import {
   loadFromLocalStorage,
 } from "../services/storageService";
 import "../styles/MoodTracking.css";
+import mt from "../assets/images/mt.jpg";
 
 const MoodTracking = () => {
   const [mood, setMood] = useState("");
   const [recordedMoods, setRecordedMoods] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     const savedMoods = loadFromLocalStorage("recordedMoods");
@@ -21,12 +23,23 @@ const MoodTracking = () => {
     const formattedDate = `${currentDate.getFullYear()}-${
       currentDate.getMonth() + 1
     }-${currentDate.getDate()}`;
+
+    const moodAlreadyRecorded = recordedMoods.some(
+      (entry) => entry.date === formattedDate
+    );
+
+    if (moodAlreadyRecorded) {
+      setErrorMessage("You can only record one mood per day.");
+      return;
+    }
+
     const moodEntry = { mood: selectedMood, date: formattedDate };
 
     setMood(selectedMood);
     setRecordedMoods([...recordedMoods, moodEntry]);
     saveToLocalStorage("mood", selectedMood);
     saveToLocalStorage("recordedMoods", [...recordedMoods, moodEntry]);
+    setErrorMessage("");
   };
 
   const deleteMoodEntry = (index) => {
@@ -37,7 +50,10 @@ const MoodTracking = () => {
   };
 
   return (
-    <div className="mood-tracking-container">
+    <div
+      className="mood-tracking-container"
+      style={{ backgroundImage: `url(${mt})` }}
+    >
       <h2 className="mood-title">Mood Tracking</h2>
       <p className="current-mood">Current Mood: {mood || "Not recorded"}</p>
       <div className="mood-buttons">
@@ -54,6 +70,7 @@ const MoodTracking = () => {
           Sad
         </button>
       </div>
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
       <ul className="recorded-moods-list">
         {recordedMoods.map((entry, index) => (
           <li key={index} className="recorded-mood-item">
