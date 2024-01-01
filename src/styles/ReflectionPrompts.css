@@ -18,11 +18,11 @@
 
 .current-prompt {
   color: #808187;
-  margin-bottom: 20px; /* Adjust this value to control the space between title and paragraph */
+  margin-bottom: 20px;
 }
 
 .prompt-buttons {
-  margin-top: 10px; /* Adjust this value to control the space between paragraph and buttons */
+  margin-top: 10px;
 }
 
 .prompt-button {
